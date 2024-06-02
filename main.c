@@ -20,6 +20,13 @@ int vaziaArv(Arv *base) {
     return 0;
 }
 
+int vaziaArv(Arv *base) {
+    if (base->raiz == NULL) {
+        return 0;
+    }
+    return 1;
+}
+
 Arv* CriaArv() {
     Arv *aux;
     aux = (Arv*)malloc(sizeof(Arv));
